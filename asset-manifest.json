@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio-react/static/css/main.97f20f64.chunk.css",
+    "main.js": "/portfolio-react/static/js/main.59d61af0.chunk.js",
+    "main.js.map": "/portfolio-react/static/js/main.59d61af0.chunk.js.map",
+    "runtime-main.js": "/portfolio-react/static/js/runtime-main.71bff8a1.js",
+    "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.71bff8a1.js.map",
+    "static/js/2.1c9cd938.chunk.js": "/portfolio-react/static/js/2.1c9cd938.chunk.js",
+    "static/js/2.1c9cd938.chunk.js.map": "/portfolio-react/static/js/2.1c9cd938.chunk.js.map",
+    "index.html": "/portfolio-react/index.html",
+    "precache-manifest.4a5415a975287cc05cab06bdd6ccb568.js": "/portfolio-react/precache-manifest.4a5415a975287cc05cab06bdd6ccb568.js",
+    "service-worker.js": "/portfolio-react/service-worker.js",
+    "static/css/main.97f20f64.chunk.css.map": "/portfolio-react/static/css/main.97f20f64.chunk.css.map",
+    "static/js/2.1c9cd938.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.1c9cd938.chunk.js.LICENSE.txt",
+    "static/media/catchcarrotgame.png": "/portfolio-react/static/media/catchcarrotgame.99e41cbe.png",
+    "static/media/initialSite.png": "/portfolio-react/static/media/initialSite.4959e9ca.png",
+    "static/media/jobsearch.png": "/portfolio-react/static/media/jobsearch.f6260cd3.png",
+    "static/media/logflix.png": "/portfolio-react/static/media/logflix.dbd50f6b.png",
+    "static/media/profile.png": "/portfolio-react/static/media/profile.20c0f4a5.png",
+    "static/media/todolist.png": "/portfolio-react/static/media/todolist.734bc3aa.png",
+    "static/media/yourtube.png": "/portfolio-react/static/media/yourtube.fed3eaf3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.71bff8a1.js",
+    "static/js/2.1c9cd938.chunk.js",
+    "static/css/main.97f20f64.chunk.css",
+    "static/js/main.59d61af0.chunk.js"
+  ]
+}
