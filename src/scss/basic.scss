@@ -1,0 +1,147 @@
+/* Global */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-mint: #b5dfe8;
+  --color-dark-mint: #01a3a4;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-passion: #ff5252;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight(Goolge Font)*/
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Annimation */
+  --animation-duration: 300ms;
+}
+
+/* Universal tags (공통적용) */
+* {
+  box-sizing: border-box;
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+
+#aboutme {
+  background-color: #f8f9fa;
+}
+
+.jumbotron {
+  padding: 0;
+  background-color: var(--color-white);
+}
+
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.about__tags {
+  margin-top: 20px;
+  color: var(--color-passion);
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  margin: auto;
+  color: var(--color-dark-mint);
+  border: 1px solid var(--color-dark-mint);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.mainMajor {
+  color: var(--color-passion);
+  border: 1px solid var(--color-passion);
+}
+
+.major__title,
+.major__description {
+  color: var(--color-dark-grey);
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+// skills
+
+#skills {
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+// arrow-up
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  color: var(--color-white);
+  border-radius: 50%;
+  background-color: var(--color-passion);
+  border: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--animation-duration) ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .display-1 {
+    font-size: 35px;
+  }
+
+  .about__majors {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .arrow-up {
+    right: 25px;
+  }
+}
