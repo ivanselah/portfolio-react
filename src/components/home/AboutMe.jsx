@@ -13,6 +13,7 @@ const AboutMe = () => {
         />
         <h1 className="display-4 pb-5 text-center">About me</h1>
         <p>{about.message}</p>
+        <p className="whoAboutMe">{about.text}</p>
         <span className="about__tags">{about.tags}</span>
         <div className="about__majors">
           <div className="major">
