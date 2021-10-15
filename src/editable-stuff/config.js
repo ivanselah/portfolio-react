@@ -43,7 +43,7 @@ const skills = {
     { name: "HTML, CSS", value: 85 },
     { name: "JavaScript", value: 80 },
     { name: "ReactJS", value: 75 },
-    { name: "TypeScript", value: 35, now: "🤩 열심히 공부 중이에요" },
+    { name: "TypeScript", value: 35 },
     { name: "NodeJS", value: 65 },
     { name: "Python", value: 60 },
     { name: "C,C++", value: 65 },

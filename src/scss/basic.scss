@@ -111,6 +111,11 @@
 
 .buildUp {
   color: var(--color-passion);
+  font-weight: bold;
+}
+
+.buildUp::after {
+  content: "🤩 열심히 공부 중이에요";
 }
 
 // arrow-up
@@ -135,14 +140,53 @@
   pointer-events: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 400px) and (max-width: 768px) {
   .display-1 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .about__majors {
     flex-direction: column;
     margin-bottom: 0;
+  }
+
+  .buildUp::after {
+    content: "\A 🤩 열심히 공부 중이에요";
+    white-space: pre;
+  }
+
+  .container img {
+    width: 300px;
+    height: 250px;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .arrow-up {
+    right: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .display-1 {
+    font-size: 30px;
+  }
+
+  .buildUp::after {
+    content: "\A 🤩 열심히 공부 중이에요";
+    white-space: pre;
+  }
+
+  .about__majors {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .container img {
+    width: 250px;
+    height: 150px;
   }
 
   .major {
