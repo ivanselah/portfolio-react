@@ -7,8 +7,12 @@ function SkillsSection({ skills, isScrolled }) {
     <>
       {skills.map((skill, index) => (
         <SkillsBar
+          index={index}
+          buildUp={skills}
           key={`${skill.name}-${index}`}
-          skill={`${skill.name} : ${skill.value}%`}
+          skill={`${skill.name} : ${skill.value}% ${
+            skill.now ? skill.now : ""
+          }`}
           value={skill.value}
           isScrolled={isScrolled}
         />

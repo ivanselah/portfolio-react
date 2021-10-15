@@ -40,10 +40,10 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "HTML", value: 90 },
-    { name: "CSS", value: 85 },
+    { name: "HTML, CSS", value: 85 },
     { name: "JavaScript", value: 80 },
     { name: "ReactJS", value: 75 },
+    { name: "TypeScript", value: 35, now: "🤩 열심히 공부 중이에요" },
     { name: "NodeJS", value: 65 },
     { name: "Python", value: 60 },
     { name: "C,C++", value: 65 },
@@ -55,6 +55,26 @@ const skills = {
 const projects = {
   heading: "Projects",
   projects: [
+    {
+      name: "Life With Book",
+      message:
+        "서점 베스트셀러 및 공공도서관 실시간 대출 인기 도서 및 검색 (공사중 🔨)",
+      alt: "lifeWithBook",
+      imageLink: require("./projects/life-with-book.png"),
+      git: "https://github.com/hahmsongmin/life-with-book",
+      deploy: "https://hahmsongmin.github.io/life-with-book",
+      languages: "React, PostCSS, FireBase(Login)",
+    },
+    {
+      name: "Home Browser",
+      message:
+        "지인(선생님)들의 기존의 불편한 점을 개선 및 추가 (메모, 학교별 학사일정 확인 및 추가, 급식정보 통합, 코로나현황)",
+      alt: "homebrowser",
+      imageLink: require("./projects/homeBrowser.png"),
+      git: "https://github.com/hahmsongmin/custombrowser-home",
+      deploy: "https://hahmsongmin.github.io/custombrowser-home/",
+      languages: "React, Firebase, MongoDB cluster",
+    },
     {
       name: "YourTube",
       message:
@@ -75,16 +95,7 @@ const projects = {
       deploy: "https://github.com/hahmsongmin/react-movieslog",
       languages: "React, ExpressJS, MongoDB",
     },
-    {
-      name: "Home Browser",
-      message:
-        "지인(선생님)들의 기존의 불편한 점을 개선 및 추가 (메모, 학교별 학사일정 확인 및 추가, 급식정보 통합, 코로나현황)",
-      alt: "homebrowser",
-      imageLink: require("./projects/homeBrowser.png"),
-      git: "https://github.com/hahmsongmin/custombrowser-home",
-      deploy: "https://hahmsongmin.github.io/custombrowser-home/",
-      languages: "React, Firebase, MongoDB cluster",
-    },
+
     {
       name: "CatchCarrot-Game",
       message:
