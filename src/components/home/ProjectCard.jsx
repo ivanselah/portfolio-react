@@ -1,9 +1,9 @@
-import React from "react";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
+import React from 'react';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 
 const ProjectCard = ({ project }) => {
-  const fontStyle = { fontWeight: "bold" };
+  const fontStyle = { fontWeight: 'bold' };
   const { name, message, alt, imageLink, git, deploy, languages } = project;
   return (
     <Col md={6}>
@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
           <Card.Text>{message}</Card.Text>
           <CardButtons deploy={deploy} git={git} />
           <hr />
-          <p style={fontStyle}>👏Languages : {languages}</p>
+          <p style={fontStyle}>Languages : {languages}</p>
         </Card.Body>
       </Card>
     </Col>
@@ -24,11 +24,7 @@ const ProjectCard = ({ project }) => {
 const CardButtons = ({ deploy, git }) => {
   return (
     <>
-      <a
-        href={deploy}
-        target="_blank"
-        className="btn btn-outline-secondary mr-3"
-      >
+      <a href={deploy} target="_blank" className="btn btn-outline-secondary mr-3">
         <i className="fas fa-external-link-alt" /> deploy
       </a>
       <a href={git} target="_blank" className="btn btn-outline-secondary">
