@@ -57,6 +57,7 @@ const projects = {
   heading: 'Personal Projects',
   projects: [
     {
+      id: 0,
       name: 'Diary COVID19',
       message: '코로나 자가격리 중 7일간 격리 일기 작성하려고 개발',
       message1: '(일기 내용은 로컬에 저장되므로 나만 볼 수 있음)',
@@ -67,6 +68,7 @@ const projects = {
       languages: 'React, Typescript, React-router-dom@6, SCSS, 배포 : FireBase',
     },
     {
+      id: 1,
       name: 'YourTube',
       message: 'Youtube의 주요 기능인 인기동영상',
       message1: '동영상 검색 및 재생 스크롤을 이용한 페이지로드 기능',
@@ -77,6 +79,7 @@ const projects = {
       languages: 'React, PostCSS',
     },
     {
+      id: 2,
       name: 'Home Browser',
       message: '지인(선생님)들의 기존의 불편한 점을 개선 및 추가 ',
       message1: '(메모, 학교별 학사일정 확인 및 추가, 급식정보 통합, 코로나현황)',
@@ -87,6 +90,7 @@ const projects = {
       languages: 'React, Firebase, MongoDB cluster',
     },
     {
+      id: 3,
       name: 'Logflix',
       message: '인기영화, TV프로그램, 검색 및 로그인 후 감상평 남겨 마이페이지에 저장 기능, 현재 로컬 DB 사용 중이므로 배포 전',
       message1: '',
@@ -98,6 +102,7 @@ const projects = {
     },
 
     {
+      id: 4,
       name: 'CatchCarrot-Game',
       message: '웹게임, 제한시간 내 랜덤 배치되는 벌레를 피해 당근을 클릭하면 승리 이벤트에 대해 깊게 이해할 수 있었던 프로젝트',
       message1: '',
@@ -108,6 +113,7 @@ const projects = {
       languages: 'Vanilla JavaScript',
     },
     {
+      id: 5,
       name: 'Portfolio WebSite',
       message: 'HTML, CSS, JS 만든 초기 포트폴리오 사이트로 DOM에 대한 이해를 할 수 있었던 프로젝트',
       message1: '',
@@ -118,6 +124,7 @@ const projects = {
       languages: 'Vanilla JavaScript',
     },
     {
+      id: 6,
       name: 'TodoList',
       message: '로컬스토리지 이용 사용자등록 및 할일 추가 삭제, 날씨API연동 및 랜덤배경화면 출력',
       message1: '',
@@ -128,6 +135,7 @@ const projects = {
       languages: 'Vanilla JavaScript',
     },
     {
+      id: 7,
       name: 'JobSearch',
       message: '검색어 입력 및 지역 선택, 여러 채용정보 사이트 크롤링 통합정보 및 엑셀파일로 다운로드 가능, 로컬서버 배포전',
       message1: '',

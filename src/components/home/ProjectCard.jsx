@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 
 const ProjectCard = ({ project }) => {
   const fontStyle = { fontWeight: 'bold', padding: '20px', background: '#e2e2e2', borderRadius: '15px' };
-  const { name, message, message1, alt, imageLink, git, deploy, languages } = project;
+  const { id, name, message, message1, alt, imageLink, git, deploy, languages } = project;
   return (
     <Col md={6}>
       <Card className='card shadow-lg p-4 mb-4 bg-white rounded'>
@@ -15,7 +15,7 @@ const ProjectCard = ({ project }) => {
             <div>{message}</div>
             <div>{message1}</div>
           </Card.Text>
-          <CardButtons deploy={deploy} git={git} name={name} />
+          <CardButtons deploy={deploy} git={git} id={id} />
           <hr />
           <p style={fontStyle}>{languages}</p>
         </Card.Body>
@@ -24,12 +24,13 @@ const ProjectCard = ({ project }) => {
   );
 };
 
-const CardButtons = ({ deploy, git, name }) => {
+const CardButtons = ({ deploy, git, id }) => {
   const [visible, setVisible] = useState(true);
   useEffect(() => {
-    switch (name) {
-      case 'Logflix':
-      case 'JobSearch':
+    switch (id) {
+      case 3:
+      case 2:
+      case 7:
         setVisible(false);
         break;
       default:
