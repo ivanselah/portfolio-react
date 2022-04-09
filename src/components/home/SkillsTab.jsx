@@ -3,7 +3,6 @@ import Col from 'react-bootstrap/Col';
 import SkillsBar from './SkillsBar';
 
 function SkillsSection({ skills, isScrolled, isMain = false }) {
-  console.log(skills);
   return (
     <>
       {isMain ? <h1>메인</h1> : <h1>서브</h1>}
