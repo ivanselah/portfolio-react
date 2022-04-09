@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 
@@ -15,7 +15,7 @@ const ProjectCard = ({ project }) => {
             <div>{message}</div>
             <div>{message1}</div>
           </Card.Text>
-          <CardButtons deploy={deploy} git={git} />
+          <CardButtons deploy={deploy} git={git} name={name} />
           <hr />
           <p style={fontStyle}>{languages}</p>
         </Card.Body>
@@ -24,12 +24,26 @@ const ProjectCard = ({ project }) => {
   );
 };
 
-const CardButtons = ({ deploy, git }) => {
+const CardButtons = ({ deploy, git, name }) => {
+  const [visible, setVisible] = useState(true);
+  useEffect(() => {
+    switch (name) {
+      case 'Logflix':
+      case 'JobSearch':
+        setVisible(false);
+        break;
+      default:
+        break;
+    }
+  }, []);
+
   return (
     <div style={{ display: 'flex', width: '100%', justifyContent: 'center' }}>
-      <a style={{ width: '100%' }} href={deploy} target='_blank' className='btn btn-outline-secondary mr-3'>
-        <i className='fas fa-external-link-alt' /> deploy
-      </a>
+      {visible && (
+        <a style={{ width: '100%' }} href={deploy} target='_blank' className='btn btn-outline-secondary mr-3'>
+          <i className='fas fa-external-link-alt' /> deploy
+        </a>
+      )}
       <a style={{ width: '100%' }} href={git} target='_blank' className='btn btn-outline-secondary'>
         <i className='fab fa-github' /> github
       </a>

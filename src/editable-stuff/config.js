@@ -59,7 +59,7 @@ const projects = {
     {
       name: 'Diary COVID19',
       message: '코로나 자가격리 중 7일간 격리 일기 작성하려고 개발',
-      message1: '(로컬에 저장되므로 나만 볼 수 있음)',
+      message1: '(일기 내용은 로컬에 저장되므로 나만 볼 수 있음)',
       alt: 'diary',
       imageLink: require('./projects/diary.png'),
       git: 'https://github.com/ivanselah/diary',

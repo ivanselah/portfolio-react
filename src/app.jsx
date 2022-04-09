@@ -65,7 +65,7 @@ function NotionComponent() {
       <Card.Body>
         <Card.Title></Card.Title>
         <Card.Text>회사 참여 프로젝트 소개</Card.Text>
-        <a href={notionSite}>
+        <a href={notionSite} target='_blank'>
           <Button variant='warning' style={{ fontWeight: 'bold', fontSize: '20px' }}>
             노션이동
           </Button>
