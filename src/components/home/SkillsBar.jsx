@@ -1,19 +1,15 @@
-import React from "react";
-import ProgressBar from "react-bootstrap/ProgressBar";
+import React from 'react';
+import ProgressBar from 'react-bootstrap/ProgressBar';
 
-function SkillsBar({ index, buildUp, skill, value, isScrolled }) {
+function SkillsBar({ index, buildUp, skill, value, isScrolled, barColor }) {
   return (
-    <div style={{ width: "95%" }}>
-      {index === 3 && buildUp[3].name === "TypeScript" ? (
-        <p className="lead mb-1 mt-2 buildUp">{skill}</p>
+    <div style={{ width: '95%' }}>
+      {index === 3 && buildUp[3].name === 'TypeScript' ? (
+        <p className='lead mb-1 mt-2 buildUp'>{skill}</p>
       ) : (
-        <p className="lead mb-1 mt-2">{skill}</p>
+        <p className='lead mb-1 mt-2'>{skill}</p>
       )}
-      <ProgressBar
-        className={!isScrolled ? "progress" : " progress-bar-animation"}
-        now={value}
-        title={value}
-      />
+      <ProgressBar variant={barColor} className={!isScrolled ? 'progress' : ' progress-bar-animation'} now={value} title={value} />
     </div>
   );
 }
