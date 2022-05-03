@@ -61,13 +61,23 @@ export default App;
 
 function NotionComponent() {
   return (
-    <Card style={{ width: '100%', fontWeight: 'bold', fontSize: '30px', textAlign: 'center' }}>
+    <Card style={{ width: '100%', fontWeight: 'bold', fontSize: '30px', textAlign: 'center', border: '1px solid tomato' }}>
       <Card.Body>
         <Card.Title></Card.Title>
-        <Card.Text>회사 참여 프로젝트 소개</Card.Text>
+        <Card.Text>경력기술서</Card.Text>
         <a href={notionSite} target='_blank'>
-          <Button variant='warning' style={{ fontWeight: 'bold', fontSize: '20px' }}>
-            노션이동
+          <Button
+            style={{
+              fontWeight: 'bold',
+              fontSize: '20px',
+              color: 'white',
+              backgroundColor: 'tomato',
+              border: 'none',
+              height: '50px',
+              width: '100px',
+            }}
+          >
+            노션 이동
           </Button>
         </a>
       </Card.Body>

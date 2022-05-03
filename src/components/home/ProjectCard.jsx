@@ -29,8 +29,9 @@ const CardButtons = ({ deploy, git, id }) => {
   useEffect(() => {
     switch (id) {
       case 3:
-      case 2:
+      case 4:
       case 7:
+      case 8:
         setVisible(false);
         break;
       default:
