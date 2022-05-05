@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
     <Col md={6}>
       <Card className='card shadow-lg p-4 mb-4 bg-white rounded'>
         <Card.Img variant='top' src={imageLink} style={{ width: '100%' }} height='300' alt={alt} />
-        <Card.Body style={{ height: '300px' }}>
+        <Card.Body>
           <Card.Title as='h5'>{name}</Card.Title>
           <Card.Text>
             <div>{message}</div>
